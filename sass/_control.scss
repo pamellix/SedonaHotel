@@ -1,0 +1,62 @@
+.control-mark {
+  position: absolute;
+  left: 0;
+  width: 46px;
+  height: 46px;
+  background-color: $input;
+  pointer-events: none;
+}
+
+.control:hover .control-mark {
+  background-color: $grey;
+  transition-duration: 0.3s;
+}
+
+.control:active .control-mark {
+  background-color: $grey-active;
+}
+
+.control:active .control-input[type="radio"]:checked + .control-mark::before {
+  opacity: 0.3;
+}
+
+.control-input:focus + .control-mark {
+  background-color: $grey;
+}
+
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $black;
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked:active + .control-mark::before {
+  opacity: 0.3;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark {
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  pointer-events: 0;
+}
+
+.control:active .control-input[type="checkbox"]:checked + .control-mark {
+  opacity: 0.3;
+  background-color: $grey-active;
+}
+
+.control-label {
+  margin-left: 16px;
+}

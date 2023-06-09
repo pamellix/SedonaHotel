@@ -1,0 +1,8 @@
+.advantages-img {
+  display: block;
+  width: 100%;
+
+  @include tablet {
+    height: 100%;
+  }
+}

@@ -1,0 +1,33 @@
+.no-js-flex {
+  position: relative;
+  display: flex;
+  transform: translateX(0);
+
+  @include tablet {
+    display: grid;
+  }
+}
+
+.no-js-nav-button {
+  display: none;
+}
+
+.no-js-nav-button::after {
+  display: none;
+}
+
+.no-js-nav-button::before {
+  background-color: $white;
+  transform: rotate(-90deg);
+  top: -0.5px;
+  width: 26px;
+  z-index: 2;
+}
+
+.no-js-nav {
+  padding-top: 96px;
+
+  @include tablet {
+    padding-top: 0;
+  }
+}

@@ -1,0 +1,18 @@
+.photo-block {
+  display: block;
+}
+
+.photo-block__img {
+  display: block;
+  width: 100%;
+
+  @include tablet {
+    height: 267px;
+  }
+}
+
+.photo-block__img--current {
+  @include tablet {
+    height: 400px;
+  }
+}

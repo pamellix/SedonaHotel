@@ -1,0 +1,96 @@
+.interested {
+  @include fontMain;
+  padding-left: 18px;
+  padding-top: 35px;
+  padding-right: 18px;
+  padding-bottom: 51px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: $white;
+
+  @include tablet {
+    padding-top: 63px;
+    margin: 0 auto;
+    width: 458px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 60px;
+  }
+
+  @include desktop {
+    padding-top: 60px;
+    padding-bottom: 65px;
+  }
+}
+
+.interested__title {
+  margin: 0;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size: 21px;
+
+  @include tablet {
+    font-size: 30px;
+    margin-bottom: 33px;
+  }
+
+  @include desktop {
+    margin-bottom: 30px;
+  }
+}
+
+.interested__depiction {
+  @include fontSmall;
+
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  width: 262px;
+  margin: 0;
+  margin-bottom: 35px;
+
+  @include tablet {
+    text-align: center;
+    line-height: 21px;
+    width: 435px;
+    margin-bottom: 40px;
+  }
+
+  @include desktop {
+    margin-bottom: 45px;
+  }
+}
+
+.interested__search {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 14px;
+  width: 284px;
+  height: 58px;
+  padding-top: 18px;
+  background-color: $blue;
+  color: $white;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 21px;
+
+  @include tablet {
+    max-width: 458px;
+    width: 100%;
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+
+.interested__search:hover {
+  background-color: $blue-hover;
+  transition-duration: 0.3s;
+}
+
+.interested__search:active {
+  background-color: $blue-active;
+  color: rgba(255, 255, 255, 0.3);
+}

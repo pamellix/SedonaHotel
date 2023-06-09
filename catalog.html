@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Academy: Седона</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon-32.ico">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="main-header">
+            <div class="main-header__wrapper">
+                <nav class="main-nav no-js-nav">
+                    <ul class="main-nav__list no-js-flex">
+                        <li class="main-nav__item">
+                            <a class="main-nav__item-link" href="index.html">главная</a>
+                        </li>
+                        <li class="main-nav__item main-nav__item--active">
+                            <a class="main-nav__item-link" href="#">фото и видео</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__item-link" href="form.html">форма отзыва</a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a class="main-nav__item-link" href="https://htmlacademy.ru/intensive/adaptive">htmlacademy</a>
+                        </li>
+                    </ul>
+                    <a class="main-header__logo" href="index.html">
+                        <img src="img/main-header-logo.svg" width="185" height="96" alt="Логотип Седоны">
+                    </a>
+                    <button id="nav" class="main-nav__toggle no-js-nav-button" type="button">
+                        <span class="visually-hidden">Открыть меню</span>
+                    </button>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main-container">
+
+            <h1 class="visually-hidden">Публикации Гостиницы Седоны</h1>
+
+            <section class="posts">
+                <div class="posts__wrapper">
+                    <div class="advantages-logo advantages-logo--mini">
+                        <img src="img/little-main-logo.svg" alt="логотип Седона" width="459" height="350">
+                    </div>
+                        <div class="posts__intro">
+                            <h2 class="posts__title">фото и видео</h2>
+                            <p class="posts__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+                        </div>
+                    <ul class="posts__list cards">
+                        <li class="posts__item card card--current posts__item--current">
+                            <a class="card__photo photo-block" href="#">
+                                <picture>
+                                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/post-photo-1-des.webp 1x, img/post-photo-1-des-2x.webp 2x">
+                                    <source media="(min-width: 768px)" type="image/webp" srcset="img/post-photo-1-tab.webp 1x, img/post-photo-1-tab-2x.webp 2x">
+                                    <source media="(min-width: 10px)" type="image/webp" srcset="img/post-photo-1.webp 1x, img/post-photo-1-2x.webp 2x">
+                                    <source media="(min-width: 1200px)" srcset="img/post-photo-1-des.jpg 1x, img/post-photo-1-des-2x.jpg 2x">
+                                    <source media="(min-width: 768px)" srcset="img/post-photo-1-tab.jpg 1x, img/post-photo-1-tab-2x.jpg 2x">
+                                    <img class="photo-block__img photo-block__img--current" src="img/post-photo-1.jpg" srcset="img/post-photo-1-2x.jpg 2x" alt="фото природы">
+                                </picture>
+                            </a>
+                            <div class="card__info card-info card-info--current">
+                                <div class="card-info__text">
+                                    <h3 class="card-info__text-title">неродные просторы</h3>
+                                    <span class="card-info__text-author">Автор фото: Борис</span>
+                                </div>
+                                <button class="card-info__counter counter-1" type="button">
+                                    <span class="visually-hidden">Кнопка лайка</span>
+                                    <svg width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <use class="card-info__counter-svg" href="./img/sprite.svg#like" width="23" height="21" />
+                                    </svg>
+                                    <span class="card-info__counter-number">1350</span>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="posts__item card cards__item">
+                            <a class="card__photo photo-block" href="#">
+                                <picture>
+                                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/post-photo-2-des.webp 1x, img/post-photo-2-des-2x.webp 2x">
+                                    <source media="(min-width: 768px)" type="image/webp" srcset="img/post-photo-2-tab.webp 1x, img/post-photo-2-tab-2x.webp 2x">
+                                    <source media="(min-width: 10px)" type="image/webp" srcset="img/post-photo-2.webp 1x, img/post-photo-2-2x.webp 2x">
+                                    <source media="(min-width: 1200px)" srcset="img/post-photo-2-des.jpg 1x, img/post-photo-2-des-2x.jpg 2x">
+                                    <source media="(min-width: 768px)" srcset="img/post-photo-2-tab.jpg 1x, img/post-photo-2-tab-2x.jpg 2x">
+                                    <img class="photo-block__img" src="img/post-photo-2.jpg" srcset="img/post-photo-2-2x.jpg 2x" alt="фото природы">
+                                </picture>
+                            </a>
+                            <div class="cards__item-info card-info">
+                                <div class="card-info__text">
+                                    <h3 class="card-info__text-title">местная растительность</h3>
+                                    <span class="card-info__text-author">Автор фото: Сергей</span>
+                                </div>
+                                <button class="card-info__counter" type="button">
+                                    <span class="visually-hidden">Кнопка лайка</span>
+                                    <svg width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <use class="card-info__counter-svg" href="./img/sprite.svg#like" width="23" height="21" />
+                                    </svg>
+                                    <span class="card-info__counter-number">143</span>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="posts__item card cards__item">
+                            <a class="card__photo photo-block" href="#">
+                                <picture>
+                                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/post-photo-3-des.webp 1x, img/post-photo-3-des-2x.webp 2x">
+                                    <source media="(min-width: 768px)" type="image/webp" srcset="img/post-photo-3-tab.webp 1x, img/post-photo-3-tab-2x.webp 2x">
+                                    <source media="(min-width: 10px)" type="image/webp" srcset="img/post-photo-3.webp 1x, img/post-photo-3-2x.webp 2x">
+                                    <source media="(min-width: 1200px)" srcset="img/post-photo-3-des.jpg 1x, img/post-photo-3-des-2x.jpg 2x">
+                                    <source media="(min-width: 768px)" srcset="img/post-photo-3-tab.jpg 1x, img/post-photo-3-tab-2x.jpg 2x">
+                                    <img class="photo-block__img" src="img/post-photo-3.jpg" srcset="img/post-photo-3-2x.jpg 2x" alt="фото природы">
+                                </picture>
+                            </a>
+                            <div class="cards__item-info card-info">
+                                <div class="card-info__text">
+                                    <h3 class="card-info__text-title">Дорога на север</h3>
+                                    <span class="card-info__text-author">Автор фото: Пётр</span>
+                                </div>
+                                <button class="card-info__counter" type="button">
+                                    <span class="visually-hidden">Кнопка лайка</span>
+                                    <svg width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <use class="card-info__counter-svg" href="./img/sprite.svg#like" width="23" height="21" />
+                                    </svg>
+                                    <span class="card-info__counter-number">96</span>
+                                </button>
+                            </div>
+                        </li>
+                        <li class="posts__item card cards__item">
+                            <a class="card__photo photo-block">
+                                <picture>
+                                    <source media="(min-width: 1200px)" type="image/webp" srcset="img/post-photo-4-des.webp 1x, img/post-photo-4-des-2x.webp 2x">
+                                    <source media="(min-width: 768px)" type="image/webp" srcset="img/post-photo-4-tab.webp 1x, img/post-photo-4-tab-2x.webp 2x">
+                                    <source media="(min-width: 10px)" type="image/webp" srcset="img/post-photo-4.webp 1x, img/post-photo-4-2x.webp 2x">
+                                    <source media="(min-width: 1200px)" srcset="img/post-photo-4-des.jpg 1x, img/post-photo-4-des-2x.jpg 2x">
+                                    <source media="(min-width: 768px)" srcset="img/post-photo-4-tab.jpg 1x, img/post-photo-4-tab-2x.jpg 2x">
+                                    <img class="photo-block__img" src="img/post-photo-4.jpg" srcset="img/post-photo-4-2x.jpg 2x" alt="фото природы">
+                                </picture>
+                            </a>
+                            <div class="cards__item-info card-info">
+                                <div class="card-info__text">
+                                    <h3 class="card-info__text-title">Мост дьявола</h3>
+                                    <span class="card-info__text-author">Автор фото: Антон</span>
+                                </div>
+                                <button class="card-info__counter" type="button">
+                                    <span class="visually-hidden">Кнопка лайка</span>
+                                    <svg width="23" height="21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <use class="card-info__counter-svg" href="./img/sprite.svg#like" width="23" height="21" />
+                                    </svg>
+                                    <span class="card-info__counter-number">254</span>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="doubts">
+                <h2 class="doubts__title">всё ещё сомневаетесь?</h2>
+                <p class="doubts__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+                <div class="doubts__video">
+                    <picture>
+                        <source media="(min-width: 1200px)" type="image/webp" srcset="img/doubts-img-des.webp 1x, img/doubts-img-des-2x.webp 2x">
+                        <source media="(min-width: 768px)" type="image/webp" srcset="img/doubts-img-tab.webp 1x, img/doubts-img-tab-2x.webp 2x">
+                        <source media="(min-width: 10px)" type="image/webp" srcset="img/doubts-img.webp 1x, img/doubts-img-2x.webp 2x">
+                        <source media="(min-width: 1200px)" srcset="img/doubts-img-des.jpg 1x, img/doubts-img-des-2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="img/doubts-img-tab.jpg 1x, img/doubts-img-tab-2x.jpg 2x">
+                        <img class="doubts__video-img" src="img/doubts-img.jpg" srcset="img/doubts-img-2x.jpg 2x" alt="подложка для видеопрезентаии">
+                    </picture>
+                    <button class="doubts__video-button" type="button">
+                        <span class="visually-hidden">Кнопка видео презентации</span>
+                    </button>
+                </div>
+            </section>
+        </main>
+
+        <footer class="main-footer">
+            <div class="main-footer__wrapper">
+                <a class="main-footer__link" href="#">#visitsedona</a>
+                <ul class="main-footer__social-list">
+                    <li class="main-footer__social-item media-item media-item--vk">
+                        <a class="media-item__link" href="#">
+                            <span class="visually-hidden">Вконтакте</span>
+                            <svg  class="media-item__link-svg" width="24" height="14">
+                                <use href="./img/sprite.svg#vk" width="24" height="14"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="main-footer__social-item media-item media-item--tg">
+                        <a class="media-item__link" href="#">
+                            <span class="visually-hidden">Телеграм</span>
+                            <svg  class="media-item__link-svg" width="21" height="18">
+                                <use href="./img/sprite.svg#tg" width="21" height="18"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="main-footer__social-item media-item media-item--yt">
+                        <a class="media-item__link" href="#">
+                            <span class="visually-hidden">Ютуб</span>
+                            <svg class="media-item__link-svg" width="20" height="14">
+                                <use href="./img/sprite.svg#yt" width="20" height="14"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <a class="main-footer__copyrights main-footer__copyrights--catalog" href="https://htmlacademy.ru/intensive/adaptive">
+                    разработано
+                    <svg class="main-footer__copyrights-logo" width="27" height="35" xmlns="http://www.w3.org/2000/svg">
+                        <use href="./img/sprite.svg#htmlacademy" width="27" height="35" />
+                    </svg>
+                    </a>
+            </div>
+        </footer>
+    </div>
+<script src="js/likes.js"></script>
+<script src="js/nav.js"></script>
+</body>
+</html>

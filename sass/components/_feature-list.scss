@@ -1,0 +1,17 @@
+.feature-list {
+  @include fontMain;
+
+  margin: 0;
+  padding: 0;
+  padding-top: 24px;
+  padding-bottom: 46px;
+  list-style-type: none;
+  width: auto;
+
+  @include tablet {
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    min-height: 331px;
+  }
+}

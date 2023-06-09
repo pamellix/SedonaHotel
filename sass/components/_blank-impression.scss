@@ -1,0 +1,88 @@
+.blank-impression {
+  position: relative;
+  padding: 0;
+  padding-left: 18px;
+  padding-right: 18px;
+  padding-bottom: 35px;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-bottom: 1px solid $grey;
+
+  @include tablet {
+    padding: 0;
+    flex-direction: column;
+    border-top: 1px solid $grey;
+    padding-left: 0;
+    padding-bottom: 55px;
+    border-bottom: 0;
+  }
+
+  @include desktop {
+    width: 960px;
+    margin: 0 auto;
+    padding-bottom: 85px;
+  }
+}
+
+
+.blank-impression__legend {
+  margin-bottom: 30px;
+
+  @include tablet {
+    width: 402px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 38px;
+  }
+
+  @include desktop {
+    margin-bottom: 55px;
+  }
+}
+
+.blank-impression__list {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  @include tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 36px;
+    column-gap: 16px;
+    margin: 0 auto;
+  }
+
+  @include desktop {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 28px;
+    margin: 0;
+    margin-left: 50px;
+  }
+}
+
+.blank-impression__item {
+  margin-bottom: 36px;
+
+  @include tablet {
+    margin-bottom: 0;
+    width: 280px;
+  }
+}
+
+.blank-impression__item:nth-child(3) {
+  margin-bottom: 0;
+}
+
+.blank-impression__item-control {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 48px;
+}

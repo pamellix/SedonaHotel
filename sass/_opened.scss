@@ -1,0 +1,9 @@
+.opened-flex {
+  display: flex;
+  transform: translateY(0);
+  transition-duration: 0.3s;
+}
+
+.opened-block {
+  display: block;
+}

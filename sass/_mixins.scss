@@ -1,0 +1,39 @@
+@mixin fontMain {
+  font: {
+    family: "PT Sans", sans-serif;
+    style: normal;
+    weight: 700;
+    size: 18px;
+  }
+
+  line-height: 26px;
+}
+
+@mixin fontSmall {
+  font: {
+    family: "PT Sans", sans-serif;
+    style: normal;
+    weight: 400;
+    size: 13px;
+  }
+
+  line-height: 21px;
+}
+
+@mixin tablet {
+  @media (min-width: $tablet-width) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $desktop-width) {
+    @content;
+  }
+}
+
+@mixin retina {
+  @media (min-resolution: $retina-resolution) {
+    @content;
+  }
+}

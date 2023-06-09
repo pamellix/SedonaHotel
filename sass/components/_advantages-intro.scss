@@ -1,0 +1,19 @@
+.advantages-intro {
+  padding-left: 18px;
+  padding-right: 18px;
+  text-align: center;
+  padding-top: 35px;
+  padding-bottom: 18.5px;
+
+  @include tablet {
+    width: 520px;
+    margin: auto;
+    padding-top: 47.5px;
+    padding-bottom: 57px;
+  }
+
+  @include desktop {
+    padding-top: 59px;
+    padding-bottom: 44px;
+  }
+}

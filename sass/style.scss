@@ -1,0 +1,53 @@
+// Начните писать стили здесь
+
+@import "mixins.scss";
+@import "variables.scss";
+@import "base.scss";
+@import "utils.scss";
+@import "control";
+
+// Компоненты
+
+@import "components/advantages-intro";
+@import "components/photo-block";
+@import "components/card-info";
+@import "components/feature-list";
+@import "components/interested";
+@import "components/posts";
+@import "components/review-intro";
+@import "components/intro-name";
+@import "components/blank-review";
+@import "components/blank-impression";
+@import "components/blank-emotions";
+@import "components/blank-submit";
+@import "components/blank-site";
+@import "components/location";
+@import "components/form-success";
+@import "components/form-failure";
+
+// Блоки и Секции
+
+@import "blocks/advantages-logo";
+@import "blocks/advantages.scss";
+@import "blocks/advantages-column";
+@import "blocks/advantages-img";
+@import "blocks/main-nav";
+@import "blocks/main-container";
+@import "blocks/feature-item";
+@import "blocks/main-footer";
+@import "blocks/main-header";
+@import "blocks/doubts";
+@import "blocks/posts";
+@import "blocks/card";
+@import "blocks/blue-form-button";
+@import "blocks/media-item";
+@import "blocks/modal-form";
+
+//скрытие блоков
+
+@import "closed";
+@import "opened";
+
+//класс при отключении js
+
+@import "no-js";

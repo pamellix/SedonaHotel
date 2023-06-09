@@ -1,0 +1,66 @@
+.form-failure {
+  position: relative;
+  margin: auto;
+  padding: 45px 42px 35px 41px;
+  width: 100%;
+  background-color: $white;
+  text-align: center;
+
+  @include tablet {
+    width: 400px;
+  }
+
+  @include desktop {
+    padding-bottom: 50px;
+  }
+}
+
+.form-failure__title {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin: 0;
+  line-height: 26px;
+  margin-bottom: 25px;
+
+  @include tablet {
+    font-size: 30px;
+    line-height: 40px;
+    width: 240px;
+    margin: 0 auto;
+    margin-bottom: 23px;
+  }
+}
+
+.form-failure__depiction {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  color: rgba(51, 51, 51, 1);
+  line-height: 21px;
+  width: 237px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  @include tablet {
+    width: 307px;
+    margin-bottom: 48px;
+  }
+}
+
+.form-failure__button {
+  @include fontMain;
+
+  display: grid;
+  place-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: $white;
+  width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 58px;
+
+  @include tablet {
+    width: 272px;
+  }
+}
