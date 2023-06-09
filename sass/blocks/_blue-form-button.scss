@@ -1,0 +1,12 @@
+.blue-form-button {
+  background-color: $blue;
+  color: $white;
+  text-transform: uppercase;
+  border: none;
+  display: block;
+}
+
+.blue-form-button:hover {
+  background-color: $blue-hover;
+  transition-duration: 0.3s;
+}

@@ -1,0 +1,91 @@
+.doubts {
+  @include fontMain;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: $white;
+  text-align: center;
+  margin-top: 17px;
+  padding-bottom: 28px;
+
+  @include tablet {
+    margin-top: 57px;
+    margin-bottom: 40px;
+    padding: 0;
+  }
+
+  @include desktop {
+    margin: 0;
+    margin-top: 60px;
+    padding-bottom: 80px;
+  }
+}
+
+.doubts__title {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin: 0;
+  line-height: 26px;
+
+  @include tablet {
+    font-size: 30px;
+    line-height: 26px;
+  }
+}
+
+.doubts__description {
+  @include fontSmall;
+
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 21px;
+  margin-top: 25px;
+  width: 266px;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgba(51, 51, 51, 1);
+
+  @include tablet {
+    width: 445px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+}
+
+.doubts__video {
+  position: relative;
+  margin-top: 38px;
+
+  @include tablet {
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top: 90px;
+  }
+
+  @include desktop {
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 85px;
+    padding: 0;
+  }
+}
+
+.doubts__video-img {
+  display: block;
+  width: 100%;
+}
+
+.doubts__video-button {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 48px;
+  height: 54px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/doubts-button.png");
+  z-index: 2;
+}
